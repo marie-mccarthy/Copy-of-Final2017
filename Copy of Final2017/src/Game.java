@@ -74,6 +74,7 @@ public static void runGame()
 			if(keepPlaying.equals("YES"))
 			{
 				System.out.println("ok, try to get another match");
+				// try to take out the cards they selected
 			}
 			else
 			{
