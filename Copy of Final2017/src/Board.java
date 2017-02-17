@@ -22,10 +22,12 @@ public class Board
 
 			for(int i =0;i<6;i++)
 				{
+					System.out.print((i+1)+" ");
 					for(int j =0;j<4;j++)
 						{
 							//prints the board
-							System.out.print(board[i] [j].getA());
+							
+							System.out.print(board[i] [j].getA()+" ");
 						}
 					System.out.println();
 				}
@@ -48,10 +50,12 @@ public class Board
 
 			for(int i =0;i<6;i++)
 				{
+					System.out.print((i+1)+" ");
+
 					for(int j =0;j<4;j++)
 						{
 							//prints the board
-							System.out.print(board[i] [j].getName());
+							System.out.print(board[i] [j].getName()+" ");
 						}
 					System.out.println();
 				}

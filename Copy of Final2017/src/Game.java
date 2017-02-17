@@ -14,17 +14,21 @@ public static void runGame()
 	System.out.println("(input anything)");
 	Scanner userInput100 = new Scanner(System.in);
 	String code= userInput100.nextLine();
+	//doesn't work , i don't know why
 	if(code.equals("marie"));
-	{
+		{
 		Board.printBoardSpecial();
-	}
+		}
+	
+	
 	printGame();
+	
 	}
 	public static void printGame()
 	{
 		boolean stillPlaying = true;
-while(stillPlaying)
-{
+		while(stillPlaying)
+			{
 //		System.out.println("Pick cards with the same value.(Enter the coordinates. Example:(21))");
 		for (Card v:Card.cardDeck);
 		System.out.println("first card:");
@@ -33,9 +37,9 @@ while(stillPlaying)
 		row1 = Integer.parseInt(firstCard.substring(0, 1))-1;
 		column1 = Integer.parseInt(firstCard.substring(1)) -1;//-1	
 		if(row1 >6)
-		{
+			{
 			row1 = 6;
-		}
+			}
 		System.out.println("second card:");
 
 		Scanner userInput2 = new Scanner(System.in);
