@@ -73,7 +73,7 @@ public static void runGame()
 			String keepPlaying= userInput2.nextLine();
 			if(keepPlaying.equals("YES"))
 			{
-				
+				System.out.println("ok, try to get another match");
 			}
 			else
 			{
@@ -81,29 +81,7 @@ public static void runGame()
 				stillPlaying = false;
 			}
 		}
-		//set a to the name of the card so it prints
 
-		
-		
-		//resets board
-//		else
-//			{
-//				System.out.println("you loose");
-//			}
-//else
-//		{
-//			System.out.println("you loose");
-//		}
-//		System.out.print("What is your fist name?");
-//		Scanner userInput = new Scanner(System.in);
-//		String first = userInput.nextLine();
-//		System.out.print("Hi "+first+".");
-//		
-//			System.out.println("You Loose.");
-//		
-//			{
-//			System.out.println("You Win!");
-//			}
-}
+	}
 	}
 }
