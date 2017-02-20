@@ -10,22 +10,23 @@ public class Game
 
 public static void runGame()
 	{
-	System.out.println("code:");
-	System.out.println("(input anything)");
+	System.out.println("");
+	System.out.println("WHat is your name?");
 	Scanner userInput100 = new Scanner(System.in);
-	String code= userInput100.nextLine();
+	String code1= userInput100.nextLine();
 	//doesn't work , i don't know why
-	if(code.equals("marie"));
-		{
-		Board.printBoardSpecial();
-		}
-	
+if(code1.equals("Marie"))
+{
+	Board.printBoardSpecial();
+}
+//	
 	
 	printGame();
 	
 	}
 	public static void printGame()
 	{
+		Board.printBoard();
 		boolean stillPlaying = true;
 		while(stillPlaying)
 			{
@@ -53,17 +54,11 @@ public static void runGame()
 
 		Board.printBoard();
 		
-		try {
-			  Thread.sleep(10000);
-			} catch (InterruptedException ie) {
-			}
+
 		
 		
 		
-		Board.board[row1][column1].setA(" ----- ");
-		Board.board[row2][column2].setA(" ----- ");
-		System.out.println("");
-		Board.printBoard();
+
 		if(Board.board[row1][column1].getName().equals(Board.board[row2][column2].getName()))
 		{
 			System.out.println("Good Job! You got a match!");
@@ -73,7 +68,7 @@ public static void runGame()
 			String keepPlaying= userInput2.nextLine();
 			if(keepPlaying.equals("YES"))
 			{
-				System.out.println("ok, try to get another match");
+				System.out.println("ok, try to get a different match");
 				// try to take out the cards they selected
 			}
 			else
@@ -82,6 +77,14 @@ public static void runGame()
 				stillPlaying = false;
 			}
 		}
+		try {
+			  Thread.sleep(10000);
+			} catch (InterruptedException ie) {
+			}
+		Board.board[row1][column1].setA(" ----- ");
+		Board.board[row2][column2].setA(" ----- ");
+		System.out.println("");
+		Board.printBoard();
 
 	}
 	}
